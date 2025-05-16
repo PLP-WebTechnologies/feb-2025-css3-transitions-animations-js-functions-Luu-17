@@ -1,0 +1,109 @@
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+    /* Transition effect */
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Class to apply the animation */
+.pulse-animation {
+    animation: pulse 1.5s infinite;
+}
+
+/* Animation for the image */
+.animated-image {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+/* Keyframe animation definition */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background-color: #3498db;
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: #e74c3c;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #3498db;
+    }
+}
+
+/* Class to apply the animation */
+.pulse-animation {
+    animation: pulse 1.5s infinite;
+}
+
+/* Theme options */
+.theme-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.theme-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease;
+}
+
+.theme-option:hover {
+    transform: scale(1.1);
+}
+
+.theme-option.selected {
+    border: 2px solid #333;
+}
+
+#light {
+    background-color: #f5f5f5;
+}
+
+#dark {
+    background-color: #333;
+}
+
+#colorful {
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+}
+
+/* Dark theme */
+.dark-theme {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.dark-theme .container {
+    background-color: #444;
+    color: #f5f5f5;
+}
+
+/* Colorful theme */
+.colorful-theme {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.colorful-theme .container {
+    background: linear-gradient(135deg, #ffffff 0%, #e6e9f0 100%);
+}
